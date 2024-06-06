@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    valor 1: <input type="number" id="valor1">
+    valor 2: <input type="number" id="valor2">
+    <button type="button" onclick="multiplicar()">*</button>
+    <button type="button" onclick="subtrair()">-</button>
+    <button type="button" onclick="divisao()">/</button>
+    <button type="button" onclick="adicao()">+</button>
+
+    <h3 id="resultado"></h3>
+    <script>
+        function multiplicar() {
+            //pegar o valor do campo valor1 e guardar em uma variavel
+            let v1 = document.getElementById("valor1").value
+
+            //pegar o valor do campo valor2 e guardar em uma variavel
+            let v2 = document.getElementById("valor2").value
+            
+            //multiplicar o valor1 pelo valor2 e guardar em uma variavel
+            let res = v1 * v2
+
+           //colocar o resultado da multiplicação dentro do h3
+           document.getElementById("resultado").innerHTML = res
+}
+function subtrair() {
+            //pegar o valor do campo valor1 e guardar em uma variavel
+            let v1 = document.getElementById("valor1").value
+
+            //pegar o valor do campo valor2 e guardar em uma variavel
+            let v2 = document.getElementById("valor2").value
+            
+            //multiplicar o valor1 pelo valor2 e guardar em uma variavel
+            let res = v1 - v2
+
+           //colocar o resultado da multiplicação dentro do h3
+           document.getElementById("resultado").innerHTML = res
+}
+
+function divisao() {
+            //pegar o valor do campo valor1 e guardar em uma variavel
+            let v1 = document.getElementById("valor1").value
+
+            //pegar o valor do campo valor2 e guardar em uma variavel
+            let v2 = document.getElementById("valor2").value
+            
+            //multiplicar o valor1 pelo valor2 e guardar em uma variavel
+            let res = v1 / v2
+
+           //colocar o resultado da multiplicação dentro do h3
+           document.getElementById("resultado").innerHTML = res
+}
+
+function adicao() {
+            
+            let v1 = document.getElementById("valor1").value
+            
+            let v2 = document.getElementById("valor2").value          
+            
+            let res =   Number(v1) + Number(v2)
+           
+          document.getElementById("resultado").innerHTML = res
+}
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

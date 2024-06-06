@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+</head>
+<body>
+
+    <h1> Trabalhando com cores</h1>
+    Fundo: <input type="color" id="fundo">
+    Texto: <input type="color" id="texto">
+    <button type="button" onclick="mudarcor()">Mudar</button>
+    <script>
+        function mudarcor(){
+            console.log("ta trocando...")
+            let cordefundo = document.getElementById("fundo").value
+            let cordotexto = document.getElementById("texto").value
+            document.body.style.backgroundColor = cordefundo
+            document.body.style.color = cordotexto
+        }
+    </script>
+    
+</body>
+</html>
